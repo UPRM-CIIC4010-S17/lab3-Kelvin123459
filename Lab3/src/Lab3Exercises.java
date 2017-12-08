@@ -5,7 +5,9 @@ public class Lab3Exercises {
 		JFrame myFrame = new JFrame("Kelvin Garcia Muniz");
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		myFrame.setLocationRelativeTo(null);
-		myFrame.setSize(200, 200);
+		MyPanelClass myPanel = new MyPanelClass();
+        myFrame.getContentPane().add(myPanel);
+		myFrame.setSize(300, 200);
 		myFrame.setVisible(true);
 	}
 }
